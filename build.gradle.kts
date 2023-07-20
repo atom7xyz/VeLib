@@ -40,12 +40,12 @@ dependencies {
     implementation("com.google.guava:guava:32.1.1-jre")
     implementation("org.apache.commons:commons-collections4:4.4")
     implementation("commons-codec:commons-codec:1.16.0")
-    implementation("org.jooq:jooq:3.18.5")
     implementation("org.apache.commons:commons-math3:3.6.1")
 
     /* DB related */
     implementation("com.rabbitmq:amqp-client:5.18.0")
     implementation("com.zaxxer:HikariCP:5.0.1")
+    implementation("org.jooq:jooq:3.18.5")
 
     /* Config related */
     implementation("com.github.Carleslc.Simple-YAML:Simple-Configuration:1.8.4")
