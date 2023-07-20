@@ -38,9 +38,10 @@ dependencies {
 
     /* Data structures related */
     implementation("com.google.guava:guava:32.1.1-jre")
-    implementation("org.apache.commons:commons-collections4:4.4")
     implementation("commons-codec:commons-codec:1.16.0")
+    implementation("org.apache.commons:commons-collections4:4.4")
     implementation("org.apache.commons:commons-math3:3.6.1")
+    implementation("com.github.ben-manes.caffeine:caffeine:3.1.6")
 
     /* DB related */
     implementation("com.rabbitmq:amqp-client:5.18.0")
@@ -48,7 +49,7 @@ dependencies {
     implementation("org.jooq:jooq:3.18.5")
 
     /* Config related */
-    implementation("com.github.Carleslc.Simple-YAML:Simple-Configuration:1.8.4")
+    implementation("com.github.Carleslc.Simple-YAML:Simple-Yaml:1.8.4")
 }
 
 tasks.test {
@@ -60,6 +61,6 @@ tasks.withType<KotlinCompile> {
 }
 
 tasks.withType<ShadowJar> {
-    val time = SimpleDateFormat("dd-MM-yyyy").format(Date())
+    val time = SimpleDateFormat("dd-MM-yyyy_HH-mm").format(Date())
     archiveFileName.set("${project.name}-${time}.jar")
 }
