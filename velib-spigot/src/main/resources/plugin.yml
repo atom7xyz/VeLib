@@ -1,0 +1,6 @@
+name: VeLib
+version: 1.0-SNAPSHOT
+main: xyz.sorridi.velib.VeLib
+authors: [ Sorridi ]
+website: https://github.com/Sorridi/VeLib
+load: STARTUP
