@@ -73,6 +73,12 @@ subprojects {
         implementation("org.reflections:reflections:0.10.2")
     }
 
+    tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+        kotlinOptions {
+            jvmTarget = "11"
+        }
+    }
+
     tasks.test {
         useJUnitPlatform()
     }
