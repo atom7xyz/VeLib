@@ -4,9 +4,15 @@ import java.util.Date
 import java.text.SimpleDateFormat
 
 plugins {
-    java
+    id("java-library")
     kotlin("jvm") version "1.9.0" apply false
     id("com.github.johnrengelman.shadow") version "8.1.1" apply false
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(11))
+    }
 }
 
 group = "xyz.sorridi.velib"
@@ -14,9 +20,15 @@ version = "1.0-SNAPSHOT"
 
 subprojects {
     apply {
-        plugin("java")
+        plugin("java-library")
         plugin("org.jetbrains.kotlin.jvm")
         plugin("com.github.johnrengelman.shadow")
+    }
+
+    java {
+        toolchain {
+            languageVersion.set(JavaLanguageVersion.of(11))
+        }
     }
 
     repositories {
