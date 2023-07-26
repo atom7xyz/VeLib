@@ -5,4 +5,6 @@ before_install:
   - sdk use gradle 8.0
 install:
   - echo "Running a custom install command"
-  - ./gradlew clean shadowJar
+  - chmod +x gradlew
+  - ./gradlew clean
+  - ./gradlew shadowJar
