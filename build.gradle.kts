@@ -50,6 +50,9 @@ subprojects {
         implementation("com.github.ben-manes.caffeine:caffeine:3.1.6")
 
         /* DB related */
+        implementation("com.mysql:mysql-connector-j:8.1.0")
+        implementation("org.mariadb.jdbc:mariadb-java-client:3.1.4")
+        implementation("org.postgresql:postgresql:42.6.0")
         implementation("com.rabbitmq:amqp-client:5.18.0")
         implementation("com.zaxxer:HikariCP:5.0.1")
         implementation("org.jooq:jooq:3.18.5")
