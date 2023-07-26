@@ -1,8 +1,8 @@
 jdk:
   - openjdk11
 before_install:
-  - yes | sdkmanager "cmake;3.22.1"
-  - sdk install java 17.0.5-oracle
-  - sdk use java 17.0.5-oracle
   - sdk install gradle 8.0
   - sdk use gradle 8.0
+install:
+  - echo "Running a custom install command"
+  - ./gradlew clean shadowJar
