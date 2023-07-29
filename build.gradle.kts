@@ -1,7 +1,7 @@
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-import java.util.Date
 import java.text.SimpleDateFormat
+import java.util.Date
 
 plugins {
     java
@@ -47,6 +47,7 @@ subprojects {
         implementation("commons-codec:commons-codec:1.16.0")
         implementation("org.apache.commons:commons-collections4:4.4")
         implementation("org.apache.commons:commons-math3:3.6.1")
+        implementation("org.apache.commons:commons-lang3:3.13.0")
         implementation("com.github.ben-manes.caffeine:caffeine:3.1.6")
 
         /* DB related */
