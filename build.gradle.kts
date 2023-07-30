@@ -63,6 +63,9 @@ subprojects {
 
         /* Reflections related */
         implementation("org.reflections:reflections:0.10.2")
+
+        /* Others */
+        implementation("org.apache.logging.log4j:log4j-core:2.20.0")
     }
 
     tasks.test {
