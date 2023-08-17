@@ -64,6 +64,9 @@ subprojects {
         /* Reflections related */
         implementation("org.reflections:reflections:0.10.2")
 
+        /* Others */
+        implementation("org.apache.logging.log4j:log4j-core:2.20.0")
+
         /* Encoding/Decoding related. */
         implementation("com.fasterxml.jackson.core:jackson-core:2.15.2")
         implementation("com.fasterxml.jackson.core:jackson-databind:2.15.2")
