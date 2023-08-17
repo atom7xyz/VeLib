@@ -63,6 +63,11 @@ subprojects {
 
         /* Reflections related */
         implementation("org.reflections:reflections:0.10.2")
+
+        /* Encoding/Decoding related. */
+        implementation("com.fasterxml.jackson.core:jackson-core:2.15.2")
+        implementation("com.fasterxml.jackson.core:jackson-databind:2.15.2")
+        implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-ion:2.15.2")
     }
 
     tasks.test {
